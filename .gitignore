@@ -1,0 +1,15 @@
+*.o
+*.swp
+*~
+*.so
+*.dylib
+*.cmake
+build/
+cmake_build
+cmake-build-debug
+.DS_Store
+.cmake_build
+.idea/
+.vim/
+.vs/
+.vscode/
