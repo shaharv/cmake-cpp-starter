@@ -1,2 +1,19 @@
-WarningsAsErrors: ''
+Checks: '*,
+-cppcoreguidelines-avoid-magic-numbers,
+-cppcoreguidelines-pro-bounds-array-to-pointer-decay,
+-cppcoreguidelines-pro-type-member-init,
+-fuchsia-default-arguments-calls,
+-fuchsia-overloaded-operator,
+-google-build-using-namespace,
+-hicpp-member-init,
+-hicpp-no-array-decay,
+-misc-non-private-member-variables-in-classes,
+-modernize-pass-by-value,
+-modernize-use-default-member-init,
+-modernize-use-trailing-return-type,
+-performance-unnecessary-value-param,
+-readability-magic-numbers,
+-readability-redundant-member-init'
+
+WarningsAsErrors: '*'
 AnalyzeTemporaryDtors: false

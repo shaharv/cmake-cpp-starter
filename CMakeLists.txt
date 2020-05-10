@@ -8,6 +8,12 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror")
 enable_testing()
 
 option(BUILD_TESTS "Build the tests" ON)
+option(CLANG_TIDY_CHECKS "Run clang-tidy checks by default" ON)
+
+if (CLANG_TIDY_CHECKS)
+  set(CMAKE_CXX_CLANG_TIDY "clang-tidy")
+endif()
+
 add_subdirectory(lib)
 
 if (BUILD_TESTS)
