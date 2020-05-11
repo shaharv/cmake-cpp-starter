@@ -12,7 +12,7 @@ option(BUILD_TESTS "Build the tests" ON)
 option(CLANG_TIDY_CHECKS "Run clang-tidy checks by default" ON)
 
 if (CLANG_TIDY_CHECKS)
-  set(CMAKE_CXX_CLANG_TIDY "clang-tidy")
+  set(CMAKE_CXX_CLANG_TIDY "clang-tidy;--header-filter=.*")
 endif()
 
 add_subdirectory(lib)
