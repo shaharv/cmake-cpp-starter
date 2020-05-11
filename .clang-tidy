@@ -7,13 +7,16 @@ Checks: '*,
 -google-build-using-namespace,
 -hicpp-member-init,
 -hicpp-no-array-decay,
+-llvm-header-guard,
 -misc-non-private-member-variables-in-classes,
 -modernize-pass-by-value,
+-modernize-raw-string-literal,
 -modernize-use-default-member-init,
 -modernize-use-trailing-return-type,
 -performance-unnecessary-value-param,
 -readability-magic-numbers,
 -readability-redundant-member-init'
 
-WarningsAsErrors: '*'
+
 AnalyzeTemporaryDtors: false
+WarningsAsErrors: '*'
