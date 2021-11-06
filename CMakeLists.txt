@@ -12,6 +12,11 @@ option(BUILD_TESTS "Build the tests" ON)
 option(TIDY "Run clang-tidy checks by default" ON)
 option(FORMAT "Create the format target" ON)
 
+# Set binaries output dir
+set(CMAKE_BINARY_DIR ${CMAKE_BINARY_DIR}/bin)
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+
 add_subdirectory(src)
 
 if (BUILD_EXAMPLES)
