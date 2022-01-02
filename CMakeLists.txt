@@ -16,6 +16,7 @@ option(FORMAT "Create the format target" ON)
 set(CMAKE_BINARY_DIR ${CMAKE_BINARY_DIR}/bin)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+set(TEST_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
 add_compile_options(-fstack-protector-strong)
 
