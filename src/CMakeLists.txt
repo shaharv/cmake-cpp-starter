@@ -1,14 +1,15 @@
 cmake_minimum_required(VERSION 3.10)
 
 set(SOURCE_FILES
-  SomeClass.cpp
+  MyClass.cpp
 )
 
 add_library(MyObjectLibrary OBJECT ${SOURCE_FILES})
 
 target_include_directories(MyObjectLibrary
   PUBLIC
-  ${CMAKE_SOURCE_DIR}/include)
+  ${CMAKE_SOURCE_DIR}/include
+  ${CMAKE_SOURCE_DIR}/src)
 
 set_property(TARGET MyObjectLibrary
              PROPERTY POSITION_INDEPENDENT_CODE 1)
