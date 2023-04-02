@@ -1,27 +1,36 @@
-AccessModifierOffset: '-4'
-AllowAllConstructorInitializersOnNextLine : 'false'
-AllowShortBlocksOnASingleLine : 'Always'
-AllowShortCaseLabelsOnASingleLine : 'true'
-AllowShortEnumsOnASingleLine : 'true'
-AllowShortFunctionsOnASingleLine : 'Inline'
-AllowShortIfStatementsOnASingleLine : 'WithoutElse'
-AllowShortLambdasOnASingleLine : 'All'
-AllowShortLoopsOnASingleLine : 'true'
-BreakConstructorInitializers: 'BeforeColon'
-ColumnLimit: 0
-ConstructorInitializerAllOnOneLineOrOnePerLine: 'true'
-EmptyLineBeforeAccessModifier: 'Leave'
-IndentWidth: '4'
-MaxEmptyLinesToKeep: '1'
-SortIncludes: 'true'
-SpaceAfterTemplateKeyword: 'false'
-SpaceBeforeAssignmentOperators: 'true'
-SpacesBeforeTrailingComments: '1'
-SpacesInAngles: 'false'
-SpacesInCStyleCastParentheses: 'false'
-SpacesInContainerLiterals: 'false'
-SpacesInParentheses: 'false'
-SpacesInSquareBrackets: 'false'
-Standard: 'c++20'
-TabWidth: '4'
+---
+ColumnLimit: 120
+Standard: c++20
+IndentWidth: 4
+TabWidth: 4
 UseTab: Never
+
+AccessModifierOffset: -4
+AllowAllConstructorInitializersOnNextLine: false
+AllowShortBlocksOnASingleLine: Always
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortEnumsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+BreakBeforeBraces: Custom
+BraceWrapping:
+    BeforeCatch: true
+BreakConstructorInitializers: BeforeColon
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+EmptyLineBeforeAccessModifier: Leave
+InsertBraces: true
+MaxEmptyLinesToKeep: 1
+PackConstructorInitializers: NextLine
+ReflowComments: false
+SortIncludes: true
+SpaceAfterTemplateKeyword: false
+SpaceBeforeAssignmentOperators: true
+SpacesBeforeTrailingComments: 1
+SpacesInAngles: false
+SpacesInCStyleCastParentheses: false
+SpacesInContainerLiterals: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+...
