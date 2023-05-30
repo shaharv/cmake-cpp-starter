@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -exuo pipefail
+
+BUILD_TYPE=${BUILD_TYPE:-Debug}
+BUILD_DIR=${BUILD_DIR:-"build"}
+CMAKE_BUILD_ARGS=${CMAKE_BUILD_ARGS:-}
+CMAKE_CONF_ARGS=${CMAKE_CONF_ARGS:-"-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"}
+
+export CXX=${CXX:-/usr/bin/clang++-12}
+export CC=${CC:-/usr/bin/clang-12}
+
+CCACHE=${CCACHE:-}
+if [[ "$CCACHE" == "1" ]]; then
+    CMAKE_CONF_ARGS="$CMAKE_CONF_ARGS -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_C_COMPILER_LAUNCHER=ccache"
+fi
+
+PROJECT_DIR=$(pwd)
+mkdir -p $BUILD_DIR
+cd $BUILD_DIR
+cmake -DCMAKE_BUILD_TYPE=${BUILD_TYPE} -GNinja $CMAKE_CONF_ARGS $PROJECT_DIR
