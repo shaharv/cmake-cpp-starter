@@ -1,8 +1,9 @@
 #include <cassert>
 #include <iostream>
 
+int a = 1;
+
 int main() {
-    int a = 1;
     assert(a == 1);
     return 0;
 }

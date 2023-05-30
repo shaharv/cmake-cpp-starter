@@ -1,5 +1,4 @@
 #include "MyClass.h"
-#include "common.h"
 
 #include <iostream>
 
