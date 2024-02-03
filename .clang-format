@@ -21,6 +21,8 @@ BreakConstructorInitializers: BeforeColon
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 EmptyLineBeforeAccessModifier: Leave
 InsertBraces: true
+InsertNewlineAtEOF: true
+KeepEmptyLinesAtTheStartOfBlocks: false
 MaxEmptyLinesToKeep: 1
 PackConstructorInitializers: NextLine
 ReflowComments: false
