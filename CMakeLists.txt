@@ -35,11 +35,8 @@ endif()
 # Enable clang-tidy of source files
 if (TIDY)
   find_program(CLANG_TIDY_EXE
-    NAMES clang-tidy-16
+    NAMES clang-tidy-16 clang-tidy-17 clang-tidy-18
     REQUIRED)
-  if (NOT CLANG_TIDY_EXE)
-    message(FATAL_ERROR "Please install clang-tidy-16.")
-  endif()
   set(CMAKE_CXX_CLANG_TIDY "${CLANG_TIDY_EXE};--header-filter=.*")
 endif()
 
