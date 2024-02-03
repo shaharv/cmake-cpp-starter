@@ -7,8 +7,8 @@ BUILD_DIR=${BUILD_DIR:-"build"}
 CMAKE_BUILD_ARGS=${CMAKE_BUILD_ARGS:-}
 CMAKE_CONF_ARGS=${CMAKE_CONF_ARGS:-"-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"}
 
-export CXX=${CXX:-/usr/bin/clang++-12}
-export CC=${CC:-/usr/bin/clang-12}
+export CXX=${CXX:-/usr/bin/clang++}
+export CC=${CC:-/usr/bin/clang}
 
 CCACHE=${CCACHE:-}
 if [[ "$CCACHE" == "1" ]]; then
