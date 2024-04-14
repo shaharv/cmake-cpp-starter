@@ -41,7 +41,7 @@ function run_compile {
 }
 
 function run_tidy {
-    TIDY_CMD=`echo "clang-tidy-12 --config-file=$SCRIPT_DIR/../.clang-tidy $CPP_UNITY_FILE -- $CPP_FLAGS" | sed 's/  */ /g'`
+    TIDY_CMD=`echo "clang-tidy-18 --config-file=$SCRIPT_DIR/../.clang-tidy $CPP_UNITY_FILE -- $CPP_FLAGS" | sed 's/  */ /g'`
     echo "Running clang-tidy:"
     echo $TIDY_CMD
     $TIDY_CMD
