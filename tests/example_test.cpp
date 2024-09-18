@@ -1,5 +1,4 @@
 #include <cassert>
-#include <iostream>
 
 int a = 1;
 
